@@ -4,7 +4,8 @@
 A simple, modular, and reusable JavaScript function library providing common math, array, and utility functions.
 
 ---
-[**NPM Page**](https://www.npmjs.com/@wd006/js-function-library)
+<a href="https://www.npmjs.com/@wd006/js-function-library" target="_blank">**NPM Page**</a><br>
+<a href="https://www.github.com/wd006/js-function-library" target="_blank">**GitHub Page**</a>
 
 ## 📋 Features
 
