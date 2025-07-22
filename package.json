@@ -1,6 +1,6 @@
 {
   "name": "@wd006/js-function-library",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "A simple, modular, and reusable JavaScript function library providing common math, array, and utility functions.",
   "main": "src/index.js",
   "type": "module",
