@@ -1,13 +1,13 @@
 {
   "name": "@wd006/js-function-library",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A simple, modular, and reusable JavaScript function library providing common math, array, and utility functions.",
   "main": "src/index.js",
   "type": "module",
   "files": [
-  "src/",
-  "README.md",
-  "LICENSE"
+    "src/",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
