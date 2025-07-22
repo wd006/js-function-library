@@ -1,0 +1,42 @@
+{
+  "name": "@wd006/js-function-library",
+  "version": "1.1.0",
+  "description": "A simple, modular, and reusable JavaScript function library providing common math, array, and utility functions.",
+  "main": "src/index.js",
+  "type": "module",
+  "files": [
+  "src/",
+  "README.md",
+  "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wd006/js-function-library.git"
+  },
+  "keywords": [
+    "javascript",
+    "utility",
+    "functions",
+    "library",
+    "math",
+    "array",
+    "string",
+    "helpers",
+    "utils",
+    "modular",
+    "js-functions",
+    "math-functions",
+    "array-utilities",
+    "javascript-library",
+    "open-source"
+  ],
+  "author": "wd006",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wd006/js-function-library/issues"
+  },
+  "homepage": "https://github.com/wd006/js-function-library#readme"
+}
