@@ -20,13 +20,13 @@ A simple, modular, and reusable JavaScript function library providing common mat
 
 ## 📦 Installation
 
-1- Install the package: 
+1- Install the package:  
 
 ```bash
 npm install @wd006/js-function-library
 ```
 
-2- Add the following to the package.json file in your project folder: 
+2- Add the following to the package.json file in your project folder:  
 
 ```json
 "type": "module"
