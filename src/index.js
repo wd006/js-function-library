@@ -1,4 +1,4 @@
-// src/math.js
+// src/math.js 
 export * from './math.js';
 
 // src/array.js
