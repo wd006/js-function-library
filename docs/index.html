@@ -18,9 +18,14 @@
             color: #2C3E50;
         }
 
+        .sky-theme {
+            background-color: #3A3F44;
+            color: #ECF0F1;
+        }
+
         .dark-theme {
-            background-color: #34495E;
-            color: #ecf0f1;
+            background-color: #3e3e3e;
+            color: #fff;
         }
 
         h1, h2, h3, h4 {
@@ -44,9 +49,14 @@
             color: #2C3E50;
         }
 
-        .dark-theme pre {
+        .sky-theme pre {
             background-color: #2C3E50;
-            color: #ecf0f1;
+            color: #ECF0F1;
+        }
+
+        .dark-theme pre {
+            background-color: #333;
+            color: #fff;
         }
 
         table {
@@ -68,9 +78,14 @@
             background-color: #f1f1f1;
         }
 
+        .sky-theme th {
+            background-color: #3A3F44;
+            color: #ECF0F1;
+        }
+
         .dark-theme th {
-            background-color: #2C3E50;
-            color: #ecf0f1;
+            background-color: #444;
+            color: #fff;
         }
 
         hr {
@@ -96,7 +111,7 @@
 </head>
 <body class="light-theme">
 
-    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark/Light Mode</button>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Light/Sky/Dark Mode</button>
 
     <h1>JavaScript Function Library</h1>
     <p><strong>by wd006</strong></p>
@@ -280,7 +295,10 @@
         function toggleTheme() {
             const body = document.body;
             if (body.classList.contains('light-theme')) {
-                body.classList.replace('light-theme', 'dark-theme');
+                body.classList.replace('light-theme', 'sky-theme');
+                localStorage.setItem('theme', 'sky');
+            } else if (body.classList.contains('sky-theme')) {
+                body.classList.replace('sky-theme', 'dark-theme');
                 localStorage.setItem('theme', 'dark');
             } else {
                 body.classList.replace('dark-theme', 'light-theme');
@@ -293,8 +311,8 @@
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme === 'dark') {
                 document.body.classList.replace('light-theme', 'dark-theme');
-            } else {
-                document.body.classList.replace('dark-theme', 'light-theme');
+            } else if (savedTheme === 'sky') {
+                document.body.classList.replace('light-theme', 'sky-theme');
             }
         }
     </script>
