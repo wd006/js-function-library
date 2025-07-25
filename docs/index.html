@@ -5,48 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Function Library</title>
     <style>
+        /* Temalar için stiller */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
+            transition: background-color 0.3s, color 0.3s;
         }
-        h1, h2, h3, h4 {
+
+        .light-theme {
+            background-color: #fff;
             color: #2C3E50;
         }
+
+        .dark-theme {
+            background-color: #2C3E50;
+            color: #ecf0f1;
+        }
+
+        h1, h2, h3, h4 {
+            color: inherit;
+        }
+
         a {
             color: #3498db;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         pre {
             background-color: #f4f4f4;
             padding: 10px;
             border-radius: 5px;
             overflow-x: auto;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
+
         table, th, td {
             border: 1px solid #ddd;
         }
+
         th, td {
             padding: 10px;
             text-align: center;
         }
+
         th {
             background-color: #f1f1f1;
         }
+
         hr {
             border: 1px solid #ddd;
         }
+
+        .theme-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
-<body>
+<body class="light-theme">
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark/Light Mode</button>
 
     <h1>JavaScript Function Library</h1>
     <p><strong>by wd006</strong></p>
@@ -224,6 +259,30 @@
     <p>For questions or support:</p>
     <a href="mailto:githubwd@gmail.com" target="_blank"><img src="https://raw.githubusercontent.com/wd006/wd006/main/contact/mail.png" style="width:111" ></a>
     <p>or open an issue on GitHub.</p>
+
+    <script>
+        // Tema değiştirme fonksiyonu
+        function toggleTheme() {
+            const body = document.body;
+            if (body.classList.contains('light-theme')) {
+                body.classList.replace('light-theme', 'dark-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.replace('dark-theme', 'light-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Sayfa yüklendiğinde seçilen temayı uygula
+        window.onload = () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.replace('light-theme', 'dark-theme');
+            } else {
+                document.body.classList.replace('dark-theme', 'light-theme');
+            }
+        }
+    </script>
 
 </body>
 </html>
