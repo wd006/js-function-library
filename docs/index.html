@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #2C3E50;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f1f1f1;
+        }
+        hr {
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Function Library</h1>
+    <p><strong>by wd006</strong></p>
+    <p>A simple, modular, and reusable JavaScript function library providing common math, array, and utility functions.</p>
+    
+    <hr>
+    
+    <p>
+        <a href="https://www.npmjs.com/@wd006/js-function-library" target="_blank"><strong>NPM Page</strong></a><br>
+        <a href="https://www.github.com/wd006/js-function-library" target="_blank"><strong>GitHub Page</strong></a>
+    </p>
+
+    <h2>📋 Features</h2>
+    <ul>
+        <li>Basic math operations (add, subtract, multiply, divide)</li>
+        <li>Number checking utilities (isInteger, isEven, isOdd)</li>
+        <li>Array manipulation helpers (addToArray, removeFromArray, arrayContains, sortArray)</li>
+        <li>Modular ES6 exports for easy usage</li>
+        <li>Clear documentation with usage examples</li>
+    </ul>
+
+    <h2>📦 Installation</h2>
+    <ol>
+        <li>Install the package:  
+            <pre>npm install @wd006/js-function-library</pre>
+        </li>
+        <li>Add the following to the package.json file in your project folder:  
+            <pre>"type": "module"</pre>
+        </li>
+        <li>And import individual modules in your project like this:
+            <pre>import { add, subtract } from '@wd006/js-function-library';</pre>
+        </li>
+    </ol>
+
+    <h2>⚙️ Requirements</h2>
+    <p>This project is written in JavaScript. To run or test the code locally, the following tools are optional but recommended:</p>
+    <ul>
+        <li><strong><a href="https://nodejs.org/downloads" target="_blank">Node.js</a></strong> (Comes with NPM) — Execute JavaScript code from the terminal.</li>
+        <li><strong><a href="https://git-scm.com/downloads" target="_blank">Git</a></strong> (optional) — Clone or download the repository easily</li>
+    </ul>
+
+    <h2>📖 Functions in the Project</h2>
+
+    <h3>math.js</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Function</th>
+                <th>Description</th>
+                <th>Example Usage</th>
+                <th>Example Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>add(a, b)</code></td>
+                <td>Adds two numbers</td>
+                <td><code>add(2, 3)</code></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><code>subtract(a, b)</code></td>
+                <td>Subtracts second number from first</td>
+                <td><code>subtract(5, 2)</code></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td><code>multiply(a, b)</code></td>
+                <td>Multiplies two numbers</td>
+                <td><code>multiply(4, 3)</code></td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td><code>divide(a, b)</code></td>
+                <td>Divides first number by second</td>
+                <td><code>divide(10, 2)</code></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><code>factorial(x)</code></td>
+                <td>Calculates the factorial of a number</td>
+                <td><code>factorial(5)</code></td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td><code>isInteger(x)</code></td>
+                <td>Returns true if <code>x</code> is an integer</td>
+                <td><code>isInteger(3.5)</code></td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td><code>isEven(x)</code></td>
+                <td>Checks if number is even</td>
+                <td><code>isEven(4)</code></td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td><code>isOdd(x)</code></td>
+                <td>Checks if number is odd</td>
+                <td><code>isOdd(5)</code></td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td><code>randomInt(min, max)</code></td>
+                <td>Generates a random integer in the range</td>
+                <td><code>randomInt(3, 7)</code></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><code>averageOfArray(array)</code></td>
+                <td>Returns the average of an array</td>
+                <td><code>averageOfArray([1,2,3])</code></td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>array.js</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Function</th>
+                <th>Description</th>
+                <th>Example Usage</th>
+                <th>Example Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>addToArray(array, element)</code></td>
+                <td>Adds element to end of array</td>
+                <td><code>addToArray([1,2], 3)</code></td>
+                <td>[1, 2, 3]</td>
+            </tr>
+            <tr>
+                <td><code>removeFromArray(array, e)</code></td>
+                <td>Removes element from array</td>
+                <td><code>removeFromArray([1,2], 2)</code></td>
+                <td>[1]</td>
+            </tr>
+            <tr>
+                <td><code>arrayContains(array, e)</code></td>
+                <td>Checks if array contains element</td>
+                <td><code>arrayContains([1,2], 2)</code></td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td><code>sortArray(array)</code></td>
+                <td>Returns a sorted copy of array</td>
+                <td><code>sortArray([3,1,2])</code></td>
+                <td>[1, 2, 3]</td>
+            </tr>
+            <tr>
+                <td><code>toUpperCase(array)</code></td>
+                <td>Converts each element to uppercase</td>
+                <td><code>toUpperCase(["a", "B", "c"])</code></td>
+                <td>["A", "B", "C"]</td>
+            </tr>
+            <tr>
+                <td><code>toLowerCase(array)</code></td>
+                <td>Converts each element to lowercase</td>
+                <td><code>toLowerCase(["A", "b", "C"])</code></td>
+                <td>["a", "b", "c"]</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>📄 License</h2>
+    <p>This project is licensed under the MIT License. You are free to use, modify, and distribute this project for personal or commercial use. See the <a href="LICENSE">LICENSE</a> file for full details.</p>
+
+    <h2>🤝 Contributing</h2>
+    <p>Contributions are welcome! Please feel free to fork the repository, make your changes, and submit a pull request.</p>
+
+    <h2>📬 Contact</h2>
+    <p>For questions or support:</p>
+    <a href="mailto:githubwd@gmail.com" target="_blank"><img src="https://raw.githubusercontent.com/wd006/wd006/main/contact/mail.png" style="width:111" ></a>
+    <p>or open an issue on GitHub.</p>
+
+</body>
+</html>
