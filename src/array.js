@@ -70,4 +70,32 @@ export function sortArray(array) {
     });
 }
 
+/**
+ * Converts each element in the array to uppercase.
+ *
+ * @param {Array} array - Array to be converted to uppercase
+ * @returns {Array} - The updated array
+ *
+ * @example
+ * const items = ["a", "B", "c"];
+ * toUpperCase(items);  // returns ["A", "B", "C"]
+ */
+export function toUpperCase(array) {
+    const editedArray = array.map(element => element.toUpperCase());
+    return editedArray;
+}
 
+/**
+ * Converts each element in the array to lowercase.
+ *
+ * @param {Array} array - Array to be converted to lowercase
+ * @returns {Array} - The updated array
+ *
+ * @example
+ * const items = ["A", "b", "C"];
+ * toLowerCase(items);  // returns ["a", "b", "c"]
+ */
+export function toLowerCase(array) {
+    const editedArray = array.map(element => element.toLowerCase());
+    return editedArray;
+}

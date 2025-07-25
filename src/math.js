@@ -64,6 +64,25 @@ export function divide(a, b) {
 }
 
 /**
+ * Calculates the factorial of a number.
+ *
+ * @param {number} x - Number to be calculated factorial
+ * @returns {number} - Result of !x
+ *
+ * @example
+ * const number = 5;
+ * factorial(number);  // returns 120
+*/
+export function factorial(x) {
+    let result = 1;
+    for (let i = 1; x >= i; i++) {
+        result *= i;
+    }
+    return result;
+}
+console.log(factorial(5));
+
+/**
  * Checks if the number is an integer.
  *
  * @param {number} a - Number whose integer value is checked
@@ -115,4 +134,36 @@ export function isEven(x) {
 export function isOdd(x) {
     return (Math.trunc(x) % 2 !== 0);
 
+}
+
+/**
+ * Generates a random integer in the specified range.
+ * 
+ * @param {number} min - Lower number limit.
+ * @param {number} max - Higher number limit.
+ * @returns {number} - Random number.
+ *
+ * @example
+ * randomInt(3, 7);  // Possible returns: 3, 4, 5, 6, 7
+*/
+export function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+/**
+ * Returns the average of a array of numbers.
+ * 
+ * @param {Array} array - Lower number limit.
+ * @returns {number} - The average of array.
+ *
+ * @example
+ * averageOfArray([1, 2, 3, 4, 5]);  // returns 3
+*/
+export function averageOfArray(array) {
+    let total = 0, amount = 0;
+    for (const num of array) {
+        total += num;
+        amount += 1;
+    }
+    return Number((total / amount));
 }

@@ -66,19 +66,35 @@ console.log(isEven(10));        // Output: true
 
 ## 📖 Functions in the Project
 
+
+### math.js
+
 | Function                    | Description                          | Example Usage                | Example Output  |
 |-----------------------------|--------------------------------------|-------------------------------|-----------------|
-| `add(a, b)`                 | Adds two numbers                      | `add(2, 3)`                  | `5`             |
-| `subtract(a, b)`            | Subtracts second number from first    | `subtract(5, 2)`             | `3`             |
-| `multiply(a, b)`            | Multiplies two numbers                | `multiply(4, 3)`             | `12`            |
-| `divide(a, b)`              | Divides first number by second        | `divide(10, 2)`              | `5`             |
-| `isInteger(x)`              | Returns true if `x` is an integer     | `isInteger(3.5)`             | `false`         |
-| `isEven(x)`                 | Checks if number is even              | `isEven(4)`                  | `true`          |
-| `isOdd(x)`                  | Checks if number is odd               | `isOdd(5)`                   | `true`          |
-| `addToArray(array, element)`| Adds element to end of array          | `addToArray([1,2], 3)`       | `[1, 2, 3]`     |
-| `removeFromArray(array, e)` | Removes element from array            | `removeFromArray([1,2], 2)`  | `[1]`           |
-| `arrayContains(array, e)`   | Checks if array contains element      | `arrayContains([1,2], 2)`    | `true`          |
-| `sortArray(array)`          | Returns a sorted copy of array        | `sortArray([3,1,2])`         | `[1, 2, 3]`     |
+| `add(a, b)`                 | Adds two numbers                       | `add(2, 3)`                  | `5`             |
+| `subtract(a, b)`            | Subtracts second number from first     | `subtract(5, 2)`             | `3`             |
+| `multiply(a, b)`            | Multiplies two numbers                 | `multiply(4, 3)`             | `12`            |
+| `divide(a, b)`              | Divides first number by second         | `divide(10, 2)`              | `5`             |
+| `factorial(x)`              | Calculates the factorial of a number.  | `factorial(5)`               | `120`           |
+| `isInteger(x)`              | Returns true if `x` is an integer      | `isInteger(3.5)`             | `false`         |
+| `isEven(x)`                 | Checks if number is even               | `isEven(4)`                  | `true`          |
+| `isOdd(x)`                  | Checks if number is odd                | `isOdd(5)`                   | `true`          |
+| `randomInt(min, max)`       | Generates a random integer in the range| `randomInt(3, 7)`            | `5`             |
+| `averageOfArray(array)`     | Returns the average of a array         | `averageOfArray([1,2,3])`    | `2`             |
+
+---
+
+### array.js
+
+
+| Function                    | Description                          | Example Usage                 | Example Output  |
+|-----------------------------|--------------------------------------|-------------------------------|-----------------|
+| `addToArray(array, element)`| Adds element to end of array         | `addToArray([1,2], 3)`        | `[1, 2, 3]`     |
+| `removeFromArray(array, e)` | Removes element from array           | `removeFromArray([1,2], 2)`   | `[1]`           |
+| `arrayContains(array, e)`   | Checks if array contains element     | `arrayContains([1,2], 2)`     | `true`          |
+| `sortArray(array)`          | Returns a sorted copy of array       | `sortArray([3,1,2])`          | `[1, 2, 3]`     |
+| `toUpperCase(array)`        | Converts each element to uppercase   | `toUpperCase(["a", "B", "c"])`| `["A", "B", "C"]`|
+| `toLowerCase(array)`        | Converts each element to lowercase   | `toUpperCase(["A", "b", "C"])`| `["a", "b", "c"]`|
 
 ---
 
